@@ -10,7 +10,7 @@ MStatus initializePlugin( MObject obj )
 	MFnPlugin fnPlugin( obj, "Marco Giordano", "1.0", "Any");
 
 
-	stat = fnPlugin.registerNode( "MG_poseReader", MG_poseReader::typeId,
+	stat = fnPlugin.registerNode( "poseReader", MG_poseReader::typeId,
 								MG_poseReader::creator,
 								MG_poseReader::initialize, 
 								MPxNode::kLocatorNode );
