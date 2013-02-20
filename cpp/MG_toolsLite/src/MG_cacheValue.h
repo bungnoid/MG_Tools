@@ -1,3 +1,5 @@
+/** \brief let s you cache a value
+*/
 /**
 * @author Marco Giordano
 * @date  10/1/2013
@@ -9,7 +11,7 @@
 *
 * node name : MG_cacheValue.
 * 
-* details : let s you cache a value 
+* details : This node let s you cache a value 
 *			This node let s you cache a value and then chose which iteration 
 *			gives out as output
 *			

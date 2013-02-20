@@ -1,5 +1,5 @@
 /** \brief let s you draw an array of vectors in maya viewport
-
+*/
 /**
 * @author Marco Giordano
 * @date  02/11/2013

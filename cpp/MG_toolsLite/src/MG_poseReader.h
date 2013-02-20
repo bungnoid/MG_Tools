@@ -1,4 +1,4 @@
-/** \biref let s you read a position based on a sperichal area 
+/** \brief This node let s you read a position based on a sperichal area
 */
 
 /**
