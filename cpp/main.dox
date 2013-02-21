@@ -1,0 +1,86 @@
+/**
+\mainpage MARCO GIORDANO MG_tools 1.0
+
+
+THIS PROJECTS NEEDS YOUR HELP!
+
+Yes this project needs the help from the community, even though many many people suggested me to sell my stuff 
+I am not going to do so. I am a fan of open source , I have learned so much from many people and I like to give
+it back to the community. 
+This is the first release so ant feedback and bug reports is more then welcome.
+Also most of the nodes comes with source code so if you like to recompile it for a missing version of maya or 
+os you are more then welcome to do so , send it to me and I will upload it and get credits for it!.
+Also you are free to expand nodes or creates python script for easily hooking up the nodes and so on.
+Every help is more then welcome and everyone that helps will get credits.
+For now the repository will be accesible for push only upon requesto , otherwise
+mail me any material you wish to see uploaded  at: marco.giordano.work@gmail.com
+
+In this repository you can find the source of most of my nodes , I decided to not build the single nodes but 
+to build bundles . 
+There are currently two bundles :
+MG_toolsLite
+MG_toolsPro
+
+MG_toolsLite comes with all the plugins with source code and can be recompiled from everyone
+MG_toolsPro comes only with the build plugin and contains some extra nodes for which I did not release the source
+
+MG_toolsLite content :
+
+	- MG_nurbsRivet (MTypeId(0x80000));
+	- MG_polyRivet(MTypeId(0x80001)); 
+	- MG_jiggleVector  (MTypeId(0x80002));
+	- MG_vector  (MTypeId(0x80003));
+	- MG_trigonometry  (MTypeId(0x80004));
+	- MG_poseReader  (MTypeId(0x80005)); 
+	- MG_splinePath  (MTypeId(0x80006)); 
+	- MG_vectorGL (MTypeId(0x80007)); 
+	- MG_dotProduct  (MTypeId(0x80008)); 
+	- MG_crossProduct  (MTypeId(0x80009)); 
+	- MG_cacheValue  (MTypeId(0x80010)); 
+	- MG_curve  (MTypeId(0x80011));
+
+	
+MG_toolsLite available compiled versions :
+
+windows : - maya2013x64 
+		  - maya2012x64
+osx : None 
+linux : Linux Fedora : -maya2012x64
+					   -maya2013x64
+							
+MG_toolsPro content :
+
+	- MG_nurbsRivet (MTypeId(0x80000));
+	- MG_polyRivet(MTypeId(0x80001)); 
+	- MG_jiggleVector  (MTypeId(0x80002));
+	- MG_vector  (MTypeId(0x80003));
+	- MG_trigonometry  (MTypeId(0x80004));
+	- MG_poseReader  (MTypeId(0x80005)); 
+	- MG_splinePath  (MTypeId(0x80006)); 
+	- MG_vectorGL (MTypeId(0x80007)); 
+	- MG_dotProduct  (MTypeId(0x80008)); 
+	- MG_crossProduct  (MTypeId(0x80009)); 
+	- MG_cacheValue  (MTypeId(0x80010)); 
+	- MG_curve  (MTypeId(0x80011));
+	- MG_twist  (MTypeId(0x80012));
+	- MG_slerpSpine  (MTypeId(0x80013)) -------------> coming soon;
+	- MG_pathSpine  (MTypeId(0x80014));
+	
+MG_toolsPro available compiled versions :
+
+windows : - maya2013x64 
+		  - maya2012x64
+osx : None 
+linux : Linux Fedora : -maya2012x64
+					   -maya2013x64
+							
+I think doxygen is an awesome tool, that's why I decided to use it.
+Since I am still human, probably there are mistakes in the doc here and there , help me fix them with some p2p review.
+If you spot an error or some doc missing like an undocumented param and so on mail me at: marco.giordano.work@gmail.com
+
+
+At this link you can find the current to do list of the project
+<a href="http://checkvist.com/checklists/172035-mg_tools">TO DO LIST</a>
+
+
+*/
