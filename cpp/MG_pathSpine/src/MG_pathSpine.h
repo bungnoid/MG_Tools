@@ -202,6 +202,11 @@ class MG_pathSpine : public MPxNode
 		* This attribute turns on/off the computation of the squash volume
 		*/
 	  static MObject computeVolumeSquash;
+	  
+	  /**
+		* THis attribute is used to fix global scale of the spine
+		*/
+	  static MObject globalScale;
       
 private :
 	MQuaternion vecToRotQuat(MVector vec);
