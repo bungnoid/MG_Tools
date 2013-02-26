@@ -65,8 +65,8 @@ MG_toolsPro content :
 	- MG_twist  (MTypeId(0x80012));
 	- MG_slerpSpine  (MTypeId(0x80013)) -------------> coming soon; 
 	- MG_pathSpine  (MTypeId(0x80014));          demo : https://vimeo.com/59338181
-	
-MG_toolsPro available compiled versions :
+	- MG_softIk  (MTypeId(0x80014));             demo : https://vimeo.com/60407407
+MG_toolsPro available compiled versions :         
 
 windows : - maya2013x64 
 		  - maya2012x64
