@@ -1,0 +1,109 @@
+\hypertarget{class_m_g__cross_product}{\section{M\-G\-\_\-cross\-Product Class Reference}
+\label{class_m_g__cross_product}\index{M\-G\-\_\-cross\-Product@{M\-G\-\_\-cross\-Product}}
+}
+
+
+let s you perform cross product and related operations  
+
+
+
+
+{\ttfamily \#include $<$M\-G\-\_\-cross\-Product.\-h$>$}
+
+Inheritance diagram for M\-G\-\_\-cross\-Product\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_m_g__cross_product}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_m_g__cross_product_a278dcb85153730af7f36eb05f887e230}{virtual M\-Status {\bfseries compute} (const M\-Plug \&plug, M\-Data\-Block \&data\-Block)}\label{class_m_g__cross_product_a278dcb85153730af7f36eb05f887e230}
+
+\item 
+\hypertarget{class_m_g__cross_product_a278dcb85153730af7f36eb05f887e230}{virtual M\-Status {\bfseries compute} (const M\-Plug \&plug, M\-Data\-Block \&data\-Block)}\label{class_m_g__cross_product_a278dcb85153730af7f36eb05f887e230}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_m_g__cross_product_a6c0c38d7c539ff59c3f91cb85bd1af16}{static void $\ast$ {\bfseries creator} ()}\label{class_m_g__cross_product_a6c0c38d7c539ff59c3f91cb85bd1af16}
+
+\item 
+\hypertarget{class_m_g__cross_product_a75e7dd903714ea50d1f21241077ee555}{static M\-Status {\bfseries initialize} ()}\label{class_m_g__cross_product_a75e7dd903714ea50d1f21241077ee555}
+
+\item 
+\hypertarget{class_m_g__cross_product_a6c0c38d7c539ff59c3f91cb85bd1af16}{static void $\ast$ {\bfseries creator} ()}\label{class_m_g__cross_product_a6c0c38d7c539ff59c3f91cb85bd1af16}
+
+\item 
+\hypertarget{class_m_g__cross_product_a75e7dd903714ea50d1f21241077ee555}{static M\-Status {\bfseries initialize} ()}\label{class_m_g__cross_product_a75e7dd903714ea50d1f21241077ee555}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_m_g__cross_product_a168a1bd8516dcdd48b7b411690e4ace1}{static M\-Object {\bfseries vector1}}\label{class_m_g__cross_product_a168a1bd8516dcdd48b7b411690e4ace1}
+
+\item 
+\hypertarget{class_m_g__cross_product_a02537162bdc9d36081799eb510bf5e33}{static M\-Object {\bfseries vector2}}\label{class_m_g__cross_product_a02537162bdc9d36081799eb510bf5e33}
+
+\item 
+\hypertarget{class_m_g__cross_product_a90700f4d43108bdfba82432a76d8eda9}{static M\-Object {\bfseries normalize}}\label{class_m_g__cross_product_a90700f4d43108bdfba82432a76d8eda9}
+
+\item 
+\hypertarget{class_m_g__cross_product_adbedd1ca22359e0ef993e18b5fd7bb55}{static M\-Object {\bfseries cross\-Product\-A}}\label{class_m_g__cross_product_adbedd1ca22359e0ef993e18b5fd7bb55}
+
+\item 
+\hypertarget{class_m_g__cross_product_a89b59a4e0255cfdb96b3d235ff9cb0ef}{static M\-Object {\bfseries reverse}}\label{class_m_g__cross_product_a89b59a4e0255cfdb96b3d235ff9cb0ef}
+
+\item 
+\hypertarget{class_m_g__cross_product_ae04ffba8f459592e3ee0128a8bb36576}{static M\-Object {\bfseries parallelogram\-A}}\label{class_m_g__cross_product_ae04ffba8f459592e3ee0128a8bb36576}
+
+\item 
+\hypertarget{class_m_g__cross_product_ad12d96fd5106cddf312b04c468ef36f9}{static M\-Object {\bfseries triangle\-A}}\label{class_m_g__cross_product_ad12d96fd5106cddf312b04c468ef36f9}
+
+\item 
+\hypertarget{class_m_g__cross_product_a9947b42b254eb4c86f8d190a3652ceea}{static M\-Type\-Id {\bfseries type\-Id}}\label{class_m_g__cross_product_a9947b42b254eb4c86f8d190a3652ceea}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+let s you perform cross product and related operations 
+
+\begin{DoxyAuthor}{Author}
+Marco Giordano 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+--/--/2011 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+latest version \-: V1 
+
+changeload versions \-: \par
+ V1 \-: \par
+
+\begin{DoxyItemize}
+\item initial release \par
+
+\end{DoxyItemize}
+\end{DoxyVersion}
+node name \-: \hyperlink{class_m_g__cross_product}{M\-G\-\_\-cross\-Product}.
+
+details \-: This node let s you perform crost product and related operations This nodes needs as input two vectors and then in output you get several value and data you can use. Available output attribute \-:
+\begin{DoxyItemize}
+\item vector1 \-: first vector input
+\item vector2 \-: second vector input
+\item normalize \-: lets you normalize the crossed vector
+\item reverse \-: lets you reverse the crossed vector
+\item parallelogram area \-: this is the area of the paralleogram built with the two vectors
+\item triangle area \-: this is the areao of the triangle built from the two vectors
+\end{DoxyItemize}
+
+example create node \-: (M\-E\-L) create\-Node \hyperlink{class_m_g__cross_product}{M\-G\-\_\-cross\-Product}. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/giordi/\-Desktop/\-P\-R\-O\-G\-E\-T\-T\-I\-\_\-\-I\-N\-\_\-\-C\-O\-R\-S\-O/\-C/\-M\-G\-\_\-\-Tools/cpp/\-M\-G\-\_\-cross\-Product/src/M\-G\-\_\-cross\-Product.\-h\item 
+C\-:/\-Users/giordi/\-Desktop/\-P\-R\-O\-G\-E\-T\-T\-I\-\_\-\-I\-N\-\_\-\-C\-O\-R\-S\-O/\-C/\-M\-G\-\_\-\-Tools/cpp/\-M\-G\-\_\-tools\-Lite/src/M\-G\-\_\-cross\-Product.\-h\end{DoxyCompactItemize}

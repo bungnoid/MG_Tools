@@ -1,3 +1,31 @@
+/** \brief lets you generate a curve out of transform
+*/
+
+/** 
+* @author Marco Giordano
+* @date  11/13/2012
+* @version latest version : V1
+* @version changeload versions : \n
+*			V1 : \n
+*				- initial release \n				
+*
+*
+* node name : MG_softIk.
+* 
+* details : This node let s you create an Ik which doesnt snap hard when you reach max distance,	
+*			it also lets you stretcfh and slide up and down the elbow/knee , for now only
+*			3 joint chain are supported.
+*			
+*			
+* example create node : (MEL) createNode MG_softIk.
+*
+*
+*		  
+* 
+*/
+
+
+
 #ifndef MG_softIk_H
 #define MG_softIk_H
 

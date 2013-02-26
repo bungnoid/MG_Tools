@@ -1,0 +1,105 @@
+\hypertarget{class_m_g__curve}{\section{M\-G\-\_\-curve Class Reference}
+\label{class_m_g__curve}\index{M\-G\-\_\-curve@{M\-G\-\_\-curve}}
+}
+
+
+lets you generate a curve out of transform  
+
+
+
+
+{\ttfamily \#include $<$M\-G\-\_\-curve.\-h$>$}
+
+Inheritance diagram for M\-G\-\_\-curve\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_m_g__curve}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_m_g__curve_aa9e2aace51476f58e756ab25b70c489a}{virtual M\-Status {\bfseries compute} (const M\-Plug \&plug, M\-Data\-Block \&data\-Block)}\label{class_m_g__curve_aa9e2aace51476f58e756ab25b70c489a}
+
+\item 
+\hypertarget{class_m_g__curve_aa9e2aace51476f58e756ab25b70c489a}{virtual M\-Status {\bfseries compute} (const M\-Plug \&plug, M\-Data\-Block \&data\-Block)}\label{class_m_g__curve_aa9e2aace51476f58e756ab25b70c489a}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_m_g__curve_a55d53bd06193f14a0dd1b987988bb5ef}{static void $\ast$ {\bfseries creator} ()}\label{class_m_g__curve_a55d53bd06193f14a0dd1b987988bb5ef}
+
+\item 
+\hypertarget{class_m_g__curve_ac628fa6a2f76d76986121ea3f1401bc3}{static M\-Status {\bfseries initialize} ()}\label{class_m_g__curve_ac628fa6a2f76d76986121ea3f1401bc3}
+
+\item 
+\hypertarget{class_m_g__curve_a55d53bd06193f14a0dd1b987988bb5ef}{static void $\ast$ {\bfseries creator} ()}\label{class_m_g__curve_a55d53bd06193f14a0dd1b987988bb5ef}
+
+\item 
+\hypertarget{class_m_g__curve_ac628fa6a2f76d76986121ea3f1401bc3}{static M\-Status {\bfseries initialize} ()}\label{class_m_g__curve_ac628fa6a2f76d76986121ea3f1401bc3}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static M\-Object \hyperlink{class_m_g__curve_a81892d761eb59f6ae72dc5455e37de26}{input\-Matrix}
+\item 
+static M\-Object \hyperlink{class_m_g__curve_a2e9dc1c2f81ae96e443d7ce8db7ff668}{output}
+\item 
+static M\-Object \hyperlink{class_m_g__curve_a3330e534c2b2d2b7db3c621af0c4d6b2}{degree}
+\item 
+static M\-Object \hyperlink{class_m_g__curve_a03d8b8f59871792f08bc09ad64447354}{transform\-Matrix}
+\item 
+static M\-Type\-Id \hyperlink{class_m_g__curve_aaefd29164297e9889c41608b8b7f2542}{type\-Id}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+lets you generate a curve out of transform 
+
+\begin{DoxyAuthor}{Author}
+Marco Giordano 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+11/13/2012 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+latest version \-: V1 
+
+changeload versions \-: \par
+ V1 \-: \par
+
+\begin{DoxyItemize}
+\item initial release \par
+
+\end{DoxyItemize}
+\end{DoxyVersion}
+node name \-: \hyperlink{class_m_g__curve}{M\-G\-\_\-curve}.
+
+details \-: This node let you create a nurbs curve using an X number of transform as control\-Points. T\-He output of this node is not a simple float but a shape , so i suggest you to create a nurbs curve like a circle and then override the connection in the \char`\"{}create\char`\"{} attribute in the curve shape
+
+example create node \-: (M\-E\-L) create\-Node \hyperlink{class_m_g__curve}{M\-G\-\_\-curve}. 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_m_g__curve_a3330e534c2b2d2b7db3c621af0c4d6b2}{\index{M\-G\-\_\-curve@{M\-G\-\_\-curve}!degree@{degree}}
+\index{degree@{degree}!MG_curve@{M\-G\-\_\-curve}}
+\subsubsection[{degree}]{\setlength{\rightskip}{0pt plus 5cm}static M\-Object M\-G\-\_\-curve\-::degree\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__curve_a3330e534c2b2d2b7db3c621af0c4d6b2}
+This is the degree we want to use for the curve \hypertarget{class_m_g__curve_a81892d761eb59f6ae72dc5455e37de26}{\index{M\-G\-\_\-curve@{M\-G\-\_\-curve}!input\-Matrix@{input\-Matrix}}
+\index{input\-Matrix@{input\-Matrix}!MG_curve@{M\-G\-\_\-curve}}
+\subsubsection[{input\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}static M\-Object M\-G\-\_\-curve\-::input\-Matrix\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__curve_a81892d761eb59f6ae72dc5455e37de26}
+This is the attribute holding the input world matrix array \hypertarget{class_m_g__curve_a2e9dc1c2f81ae96e443d7ce8db7ff668}{\index{M\-G\-\_\-curve@{M\-G\-\_\-curve}!output@{output}}
+\index{output@{output}!MG_curve@{M\-G\-\_\-curve}}
+\subsubsection[{output}]{\setlength{\rightskip}{0pt plus 5cm}static M\-Object M\-G\-\_\-curve\-::output\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__curve_a2e9dc1c2f81ae96e443d7ce8db7ff668}
+This is the output shape of the curve \hypertarget{class_m_g__curve_a03d8b8f59871792f08bc09ad64447354}{\index{M\-G\-\_\-curve@{M\-G\-\_\-curve}!transform\-Matrix@{transform\-Matrix}}
+\index{transform\-Matrix@{transform\-Matrix}!MG_curve@{M\-G\-\_\-curve}}
+\subsubsection[{transform\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}static M\-Object M\-G\-\_\-curve\-::transform\-Matrix\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__curve_a03d8b8f59871792f08bc09ad64447354}
+Plug this value holds the transform world matrix of the curve , if you plug it in the node we will multipy the point for the inverse matrix so the curve wont be affected by its transform \hypertarget{class_m_g__curve_aaefd29164297e9889c41608b8b7f2542}{\index{M\-G\-\_\-curve@{M\-G\-\_\-curve}!type\-Id@{type\-Id}}
+\index{type\-Id@{type\-Id}!MG_curve@{M\-G\-\_\-curve}}
+\subsubsection[{type\-Id}]{\setlength{\rightskip}{0pt plus 5cm}static M\-Type\-Id M\-G\-\_\-curve\-::type\-Id\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__curve_aaefd29164297e9889c41608b8b7f2542}
+The node id 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/giordi/\-Desktop/\-P\-R\-O\-G\-E\-T\-T\-I\-\_\-\-I\-N\-\_\-\-C\-O\-R\-S\-O/\-C/\-M\-G\-\_\-\-Tools/cpp/\-M\-G\-\_\-curve/src/M\-G\-\_\-curve.\-h\item 
+C\-:/\-Users/giordi/\-Desktop/\-P\-R\-O\-G\-E\-T\-T\-I\-\_\-\-I\-N\-\_\-\-C\-O\-R\-S\-O/\-C/\-M\-G\-\_\-\-Tools/cpp/\-M\-G\-\_\-tools\-Lite/src/M\-G\-\_\-curve.\-h\end{DoxyCompactItemize}
