@@ -50,21 +50,21 @@ linux : Linux Fedora : -maya2012x64
 							
 MG_toolsPro content :
 
-	- MG_nurbsRivet (MTypeId(0x80000));
-	- MG_polyRivet(MTypeId(0x80001)); 
+	- MG_nurbsRivet (MTypeId(0x80000));			 demo : https://vimeo.com/47952936 , https://vimeo.com/47930938
+	- MG_polyRivet(MTypeId(0x80001)); 			 demo : check the nurbs rivet demos
 	- MG_jiggleVector  (MTypeId(0x80002));
 	- MG_vector  (MTypeId(0x80003));
-	- MG_trigonometry  (MTypeId(0x80004));
-	- MG_poseReader  (MTypeId(0x80005)); 
-	- MG_splinePath  (MTypeId(0x80006)); 
-	- MG_vectorGL (MTypeId(0x80007)); 
+	- MG_trigonometry  (MTypeId(0x80004));		 demo : https://vimeo.com/34701659
+	- MG_poseReader  (MTypeId(0x80005)); 		 demo : https://vimeo.com/60409388
+	- MG_splinePath  (MTypeId(0x80006));   		 demo : https://vimeo.com/57804110
+	- MG_vectorGL (MTypeId(0x80007)); 			 demo : https://vimeo.com/57804482
 	- MG_dotProduct  (MTypeId(0x80008)); 
 	- MG_crossProduct  (MTypeId(0x80009)); 
 	- MG_cacheValue  (MTypeId(0x80010)); 
-	- MG_curve  (MTypeId(0x80011));
+	- MG_curve  (MTypeId(0x80011));				 demo : https://vimeo.com/47930483
 	- MG_twist  (MTypeId(0x80012));
-	- MG_slerpSpine  (MTypeId(0x80013)) -------------> coming soon;
-	- MG_pathSpine  (MTypeId(0x80014));
+	- MG_slerpSpine  (MTypeId(0x80013)) -------------> coming soon; 
+	- MG_pathSpine  (MTypeId(0x80014));          demo : https://vimeo.com/59338181
 	
 MG_toolsPro available compiled versions :
 
