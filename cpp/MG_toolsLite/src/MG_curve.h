@@ -19,7 +19,6 @@
 *			
 * example create node : (MEL) createNode MG_curve.
 *
-* @todo  add baricentric coordinates computation mode
 *
 *		  
 * 
