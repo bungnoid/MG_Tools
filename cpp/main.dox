@@ -17,7 +17,7 @@ os you are more then welcome to do so , send it to me and I will upload it and g
 Also you are free to expand nodes or creates python script for easily hooking up the nodes and so on.
 Every help is more then welcome and everyone that helps will get credits.
 For now the repository will be accesible for push only upon requesto , otherwise
-mail me any material you wish to see uploaded  at: marco.giordano.work@gmail.com
+mail me any material you wish to see uploaded  at: marco(dot)giordano(dot)work(at)gmail(dot)com
 
 In this repository you can find the source of most of my nodes , I decided to not build the single nodes but 
 to build bundles . 
@@ -80,11 +80,10 @@ linux : Linux Fedora : -maya2012x64
 							
 I think doxygen is an awesome tool, that's why I decided to use it.
 Since I am still human, probably there are mistakes in the doc here and there , help me fix them with some p2p review.
-If you spot an error or some doc missing like an undocumented param and so on mail me at: marco.giordano.work@gmail.com
+If you spot an error or some doc missing like an undocumented param and so on mail me at: marco(dot)giordano(dot)work(at)gmail(dot)com
 
 
-At this link you can find the current to do list of the project
-<a href="http://checkvist.com/checklists/172035-mg_tools">TO DO LIST</a>
+
 
 
 */

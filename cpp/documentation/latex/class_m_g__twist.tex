@@ -1,0 +1,140 @@
+\hypertarget{class_m_g__twist}{\section{M\-G\-\_\-twist Class Reference}
+\label{class_m_g__twist}\index{M\-G\-\_\-twist@{M\-G\-\_\-twist}}
+}
+
+
+lets you extract a twist value from two transforms  
+
+
+
+
+{\ttfamily \#include $<$M\-G\-\_\-twist.\-h$>$}
+
+Inheritance diagram for M\-G\-\_\-twist\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_m_g__twist}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_m_g__twist_ac9b4a271cdca26dc4ca7fb6eb56e390c}{virtual M\-Status {\bfseries compute} (const M\-Plug \&plug, M\-Data\-Block \&data\-Block)}\label{class_m_g__twist_ac9b4a271cdca26dc4ca7fb6eb56e390c}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_m_g__twist_a028726ad6a2ddbf567019014fd234b28}{static void $\ast$ {\bfseries creator} ()}\label{class_m_g__twist_a028726ad6a2ddbf567019014fd234b28}
+
+\item 
+\hypertarget{class_m_g__twist_a7d33df78fd5b162dc731a2668455f64c}{static M\-Status {\bfseries initialize} ()}\label{class_m_g__twist_a7d33df78fd5b162dc731a2668455f64c}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static M\-Object \hyperlink{class_m_g__twist_a1f56e50333669ce2a38f71e3226ab18e}{matrix1}
+\item 
+static M\-Object \hyperlink{class_m_g__twist_a529b723501fff0dd68b7062a8816195b}{matrix2}
+\item 
+static M\-Object \hyperlink{class_m_g__twist_a53c3b473d1227aec0ff7a13d7a2ea246}{number\-Of\-Outputs}
+\item 
+static M\-Object \hyperlink{class_m_g__twist_a8b36730a0d0d26103ebcd04b26479c23}{twist\-Axis}
+\item 
+static M\-Object \hyperlink{class_m_g__twist_a290ab074cc022d06d1498fa3a96e1d20}{output\-Translate\-X}
+\item 
+static M\-Object \hyperlink{class_m_g__twist_acf377991d45f3bda1fb51bc6509d6d81}{output\-Translate\-Y}
+\item 
+static M\-Object \hyperlink{class_m_g__twist_a4dda83e85c12b6a8b58775bf1b3d38bb}{output\-Translate\-Z}
+\item 
+static M\-Object \hyperlink{class_m_g__twist_a7e48847c5606a677f1dc1ea4bdb3402d}{output\-Translate}
+\item 
+static M\-Object \hyperlink{class_m_g__twist_a20fee814720fcaee9b09f7de20f0b286}{output\-Rotate\-X}
+\item 
+static M\-Object \hyperlink{class_m_g__twist_a37e96db269a8af41fe9f808a35d27967}{output\-Rotate\-Y}
+\item 
+static M\-Object \hyperlink{class_m_g__twist_a3cae9cd439fd68b38b77ae4e439f64d5}{output\-Rotate\-Z}
+\item 
+static M\-Object \hyperlink{class_m_g__twist_a3908aa57e152eb462614eefb56bb82fb}{output\-Rotate}
+\item 
+\hypertarget{class_m_g__twist_a79fb6cae99e39340484b4434f1fd9e70}{static M\-Type\-Id {\bfseries type\-Id}}\label{class_m_g__twist_a79fb6cae99e39340484b4434f1fd9e70}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+lets you extract a twist value from two transforms 
+
+\begin{DoxyAuthor}{Author}
+Marco Giordano 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+1/24/2013 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+latest version \-: V1 
+
+changeload versions \-: \par
+ V1 \-: \par
+
+\begin{DoxyItemize}
+\item initial release \par
+ V2 \-: \par
+
+\item implemented different twist axis rather then only Y \par
+ node name \-: \hyperlink{class_m_g__twist}{M\-G\-\_\-twist}
+\end{DoxyItemize}
+\end{DoxyVersion}
+details \-: This node lets you extract a twist value from two transforms
+
+example create node \-: (M\-E\-L) create\-Node \hyperlink{class_m_g__twist}{M\-G\-\_\-twist}.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000010}{Todo}]set output data with a single array data builder rather then one at the time in order to improve performances 
+
+implement more type of distribuition for for the outputs\end{DoxyRefDesc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_m_g__twist_a1f56e50333669ce2a38f71e3226ab18e}{\index{M\-G\-\_\-twist@{M\-G\-\_\-twist}!matrix1@{matrix1}}
+\index{matrix1@{matrix1}!MG_twist@{M\-G\-\_\-twist}}
+\subsubsection[{matrix1}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-twist\-::matrix1\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__twist_a1f56e50333669ce2a38f71e3226ab18e}
+The first matrix to calculate the twist from \hypertarget{class_m_g__twist_a529b723501fff0dd68b7062a8816195b}{\index{M\-G\-\_\-twist@{M\-G\-\_\-twist}!matrix2@{matrix2}}
+\index{matrix2@{matrix2}!MG_twist@{M\-G\-\_\-twist}}
+\subsubsection[{matrix2}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-twist\-::matrix2\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__twist_a529b723501fff0dd68b7062a8816195b}
+The second matrix to calculate the twist from \hypertarget{class_m_g__twist_a53c3b473d1227aec0ff7a13d7a2ea246}{\index{M\-G\-\_\-twist@{M\-G\-\_\-twist}!number\-Of\-Outputs@{number\-Of\-Outputs}}
+\index{number\-Of\-Outputs@{number\-Of\-Outputs}!MG_twist@{M\-G\-\_\-twist}}
+\subsubsection[{number\-Of\-Outputs}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-twist\-::number\-Of\-Outputs\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__twist_a53c3b473d1227aec0ff7a13d7a2ea246}
+How many output twist will be computed \hypertarget{class_m_g__twist_a3908aa57e152eb462614eefb56bb82fb}{\index{M\-G\-\_\-twist@{M\-G\-\_\-twist}!output\-Rotate@{output\-Rotate}}
+\index{output\-Rotate@{output\-Rotate}!MG_twist@{M\-G\-\_\-twist}}
+\subsubsection[{output\-Rotate}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-twist\-::output\-Rotate\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__twist_a3908aa57e152eb462614eefb56bb82fb}
+This is the output Rotate array \hypertarget{class_m_g__twist_a20fee814720fcaee9b09f7de20f0b286}{\index{M\-G\-\_\-twist@{M\-G\-\_\-twist}!output\-Rotate\-X@{output\-Rotate\-X}}
+\index{output\-Rotate\-X@{output\-Rotate\-X}!MG_twist@{M\-G\-\_\-twist}}
+\subsubsection[{output\-Rotate\-X}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-twist\-::output\-Rotate\-X\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__twist_a20fee814720fcaee9b09f7de20f0b286}
+This is the X component of the output Rotate array \hypertarget{class_m_g__twist_a37e96db269a8af41fe9f808a35d27967}{\index{M\-G\-\_\-twist@{M\-G\-\_\-twist}!output\-Rotate\-Y@{output\-Rotate\-Y}}
+\index{output\-Rotate\-Y@{output\-Rotate\-Y}!MG_twist@{M\-G\-\_\-twist}}
+\subsubsection[{output\-Rotate\-Y}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-twist\-::output\-Rotate\-Y\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__twist_a37e96db269a8af41fe9f808a35d27967}
+This is the Y component of the output Rotate array \hypertarget{class_m_g__twist_a3cae9cd439fd68b38b77ae4e439f64d5}{\index{M\-G\-\_\-twist@{M\-G\-\_\-twist}!output\-Rotate\-Z@{output\-Rotate\-Z}}
+\index{output\-Rotate\-Z@{output\-Rotate\-Z}!MG_twist@{M\-G\-\_\-twist}}
+\subsubsection[{output\-Rotate\-Z}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-twist\-::output\-Rotate\-Z\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__twist_a3cae9cd439fd68b38b77ae4e439f64d5}
+This is the Z component of the output Rotate array \hypertarget{class_m_g__twist_a7e48847c5606a677f1dc1ea4bdb3402d}{\index{M\-G\-\_\-twist@{M\-G\-\_\-twist}!output\-Translate@{output\-Translate}}
+\index{output\-Translate@{output\-Translate}!MG_twist@{M\-G\-\_\-twist}}
+\subsubsection[{output\-Translate}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-twist\-::output\-Translate\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__twist_a7e48847c5606a677f1dc1ea4bdb3402d}
+This is the output translate array \hypertarget{class_m_g__twist_a290ab074cc022d06d1498fa3a96e1d20}{\index{M\-G\-\_\-twist@{M\-G\-\_\-twist}!output\-Translate\-X@{output\-Translate\-X}}
+\index{output\-Translate\-X@{output\-Translate\-X}!MG_twist@{M\-G\-\_\-twist}}
+\subsubsection[{output\-Translate\-X}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-twist\-::output\-Translate\-X\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__twist_a290ab074cc022d06d1498fa3a96e1d20}
+This is the X component of the output translate array \hypertarget{class_m_g__twist_acf377991d45f3bda1fb51bc6509d6d81}{\index{M\-G\-\_\-twist@{M\-G\-\_\-twist}!output\-Translate\-Y@{output\-Translate\-Y}}
+\index{output\-Translate\-Y@{output\-Translate\-Y}!MG_twist@{M\-G\-\_\-twist}}
+\subsubsection[{output\-Translate\-Y}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-twist\-::output\-Translate\-Y\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__twist_acf377991d45f3bda1fb51bc6509d6d81}
+This is the Y component of the output translate array \hypertarget{class_m_g__twist_a4dda83e85c12b6a8b58775bf1b3d38bb}{\index{M\-G\-\_\-twist@{M\-G\-\_\-twist}!output\-Translate\-Z@{output\-Translate\-Z}}
+\index{output\-Translate\-Z@{output\-Translate\-Z}!MG_twist@{M\-G\-\_\-twist}}
+\subsubsection[{output\-Translate\-Z}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-twist\-::output\-Translate\-Z\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__twist_a4dda83e85c12b6a8b58775bf1b3d38bb}
+This is the Z component of the output translate array \hypertarget{class_m_g__twist_a8b36730a0d0d26103ebcd04b26479c23}{\index{M\-G\-\_\-twist@{M\-G\-\_\-twist}!twist\-Axis@{twist\-Axis}}
+\index{twist\-Axis@{twist\-Axis}!MG_twist@{M\-G\-\_\-twist}}
+\subsubsection[{twist\-Axis}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-twist\-::twist\-Axis\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__twist_a8b36730a0d0d26103ebcd04b26479c23}
+This is the axis that will be used for computation 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/giordi/\-Desktop/\-P\-R\-O\-G\-E\-T\-T\-I\-\_\-\-I\-N\-\_\-\-C\-O\-R\-S\-O/\-C/\-M\-G\-\_\-\-Tools/cpp/\-M\-G\-\_\-twist/src/M\-G\-\_\-twist.\-h\end{DoxyCompactItemize}

@@ -1,0 +1,145 @@
+\hypertarget{class_m_g__soft_ik}{\section{M\-G\-\_\-soft\-Ik Class Reference}
+\label{class_m_g__soft_ik}\index{M\-G\-\_\-soft\-Ik@{M\-G\-\_\-soft\-Ik}}
+}
+
+
+lets you generate a curve out of transform  
+
+
+
+
+{\ttfamily \#include $<$M\-G\-\_\-soft\-Ik.\-h$>$}
+
+Inheritance diagram for M\-G\-\_\-soft\-Ik\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_m_g__soft_ik}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_m_g__soft_ik_ae7f2c09fc04bee1abfeafea4afe4b736}{virtual M\-Status {\bfseries compute} (const M\-Plug \&plug, M\-Data\-Block \&data\-Block)}\label{class_m_g__soft_ik_ae7f2c09fc04bee1abfeafea4afe4b736}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_m_g__soft_ik_a4c117d6821041e37c4ff5e8692584dba}{static void $\ast$ {\bfseries creator} ()}\label{class_m_g__soft_ik_a4c117d6821041e37c4ff5e8692584dba}
+
+\item 
+\hypertarget{class_m_g__soft_ik_a90f01001e188fe3edbfb2aa4f69af29b}{static M\-Status {\bfseries initialize} ()}\label{class_m_g__soft_ik_a90f01001e188fe3edbfb2aa4f69af29b}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static M\-Type\-Id \hyperlink{class_m_g__soft_ik_aa83471e41222b306261d20f6851548b8}{type\-Id}
+\item 
+static M\-Object \hyperlink{class_m_g__soft_ik_aee30f7b1a9cd369af0797452171a1656}{start\-Matrix}
+\item 
+static M\-Object \hyperlink{class_m_g__soft_ik_ac909738ce18e4fb5997f468c0a33cdfb}{end\-Matrix}
+\item 
+static M\-Object \hyperlink{class_m_g__soft_ik_a77928e84cd0a9004779b0c180082efe9}{up\-Init\-Length}
+\item 
+static M\-Object \hyperlink{class_m_g__soft_ik_afb62d1fde24129ba913b96afc8ec4ecc}{down\-Init\-Length}
+\item 
+static M\-Object \hyperlink{class_m_g__soft_ik_a756bb616c77c3f8e43ede9b9e6cb5640}{up\-Scale}
+\item 
+static M\-Object \hyperlink{class_m_g__soft_ik_a52416d57abfb94a331943f1fa58fd53e}{down\-Scale}
+\item 
+static M\-Object \hyperlink{class_m_g__soft_ik_a72bd64a9986cbb29cec8953ef4199289}{stretch}
+\item 
+static M\-Object \hyperlink{class_m_g__soft_ik_a4ab55903fd1f7ac8b66438ad9ea07640}{soft\-Distance}
+\item 
+static M\-Object \hyperlink{class_m_g__soft_ik_aeb0fdd1e018c9a49d38f64856cf0ea6c}{slide}
+\item 
+static M\-Object \hyperlink{class_m_g__soft_ik_afe844848e40644cf73613d0592c67d16}{output\-Translate\-X}
+\item 
+static M\-Object \hyperlink{class_m_g__soft_ik_a8e1a854c6ed650a85eb0ee282a0ff986}{output\-Translate\-Y}
+\item 
+static M\-Object \hyperlink{class_m_g__soft_ik_a81840d1c2a32bb9583990881fa327359}{output\-Translate\-Z}
+\item 
+static M\-Object \hyperlink{class_m_g__soft_ik_a99464e8482fc066165a2eef1cef02027}{output\-Translate}
+\item 
+static M\-Object \hyperlink{class_m_g__soft_ik_a984339b87697837dd64877689846753d}{global\-Scale}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+lets you generate a curve out of transform 
+
+\begin{DoxyAuthor}{Author}
+Marco Giordano 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+11/13/2012 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+latest version \-: V1 
+
+changeload versions \-: \par
+ V1 \-: \par
+
+\begin{DoxyItemize}
+\item initial release \par
+
+\end{DoxyItemize}
+\end{DoxyVersion}
+node name \-: \hyperlink{class_m_g__soft_ik}{M\-G\-\_\-soft\-Ik}.
+
+details \-: This node let s you create an Ik which doesnt snap hard when you reach max distance, it also lets you stretcfh and slide up and down the elbow/knee , for now only 3 joint chain are supported.
+
+example create node \-: (M\-E\-L) create\-Node \hyperlink{class_m_g__soft_ik}{M\-G\-\_\-soft\-Ik}. 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_m_g__soft_ik_afb62d1fde24129ba913b96afc8ec4ecc}{\index{M\-G\-\_\-soft\-Ik@{M\-G\-\_\-soft\-Ik}!down\-Init\-Length@{down\-Init\-Length}}
+\index{down\-Init\-Length@{down\-Init\-Length}!MG_softIk@{M\-G\-\_\-soft\-Ik}}
+\subsubsection[{down\-Init\-Length}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-soft\-Ik\-::down\-Init\-Length\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__soft_ik_afb62d1fde24129ba913b96afc8ec4ecc}
+This attribute is the initial length of the first bone \hypertarget{class_m_g__soft_ik_a52416d57abfb94a331943f1fa58fd53e}{\index{M\-G\-\_\-soft\-Ik@{M\-G\-\_\-soft\-Ik}!down\-Scale@{down\-Scale}}
+\index{down\-Scale@{down\-Scale}!MG_softIk@{M\-G\-\_\-soft\-Ik}}
+\subsubsection[{down\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-soft\-Ik\-::down\-Scale\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__soft_ik_a52416d57abfb94a331943f1fa58fd53e}
+This attribute is the output attribute for the second bone scale \hypertarget{class_m_g__soft_ik_ac909738ce18e4fb5997f468c0a33cdfb}{\index{M\-G\-\_\-soft\-Ik@{M\-G\-\_\-soft\-Ik}!end\-Matrix@{end\-Matrix}}
+\index{end\-Matrix@{end\-Matrix}!MG_softIk@{M\-G\-\_\-soft\-Ik}}
+\subsubsection[{end\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-soft\-Ik\-::end\-Matrix\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__soft_ik_ac909738ce18e4fb5997f468c0a33cdfb}
+This attribute holds the world matrix of the end reference node of the ik (a transform matching the position of the chain last bone \hypertarget{class_m_g__soft_ik_a984339b87697837dd64877689846753d}{\index{M\-G\-\_\-soft\-Ik@{M\-G\-\_\-soft\-Ik}!global\-Scale@{global\-Scale}}
+\index{global\-Scale@{global\-Scale}!MG_softIk@{M\-G\-\_\-soft\-Ik}}
+\subsubsection[{global\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-soft\-Ik\-::global\-Scale\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__soft_ik_a984339b87697837dd64877689846753d}
+This is input global scale \hypertarget{class_m_g__soft_ik_a99464e8482fc066165a2eef1cef02027}{\index{M\-G\-\_\-soft\-Ik@{M\-G\-\_\-soft\-Ik}!output\-Translate@{output\-Translate}}
+\index{output\-Translate@{output\-Translate}!MG_softIk@{M\-G\-\_\-soft\-Ik}}
+\subsubsection[{output\-Translate}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-soft\-Ik\-::output\-Translate\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__soft_ik_a99464e8482fc066165a2eef1cef02027}
+This is the output translate array \hypertarget{class_m_g__soft_ik_afe844848e40644cf73613d0592c67d16}{\index{M\-G\-\_\-soft\-Ik@{M\-G\-\_\-soft\-Ik}!output\-Translate\-X@{output\-Translate\-X}}
+\index{output\-Translate\-X@{output\-Translate\-X}!MG_softIk@{M\-G\-\_\-soft\-Ik}}
+\subsubsection[{output\-Translate\-X}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-soft\-Ik\-::output\-Translate\-X\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__soft_ik_afe844848e40644cf73613d0592c67d16}
+This is the X component of the output translate array \hypertarget{class_m_g__soft_ik_a8e1a854c6ed650a85eb0ee282a0ff986}{\index{M\-G\-\_\-soft\-Ik@{M\-G\-\_\-soft\-Ik}!output\-Translate\-Y@{output\-Translate\-Y}}
+\index{output\-Translate\-Y@{output\-Translate\-Y}!MG_softIk@{M\-G\-\_\-soft\-Ik}}
+\subsubsection[{output\-Translate\-Y}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-soft\-Ik\-::output\-Translate\-Y\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__soft_ik_a8e1a854c6ed650a85eb0ee282a0ff986}
+This is the Y component of the output translate array \hypertarget{class_m_g__soft_ik_a81840d1c2a32bb9583990881fa327359}{\index{M\-G\-\_\-soft\-Ik@{M\-G\-\_\-soft\-Ik}!output\-Translate\-Z@{output\-Translate\-Z}}
+\index{output\-Translate\-Z@{output\-Translate\-Z}!MG_softIk@{M\-G\-\_\-soft\-Ik}}
+\subsubsection[{output\-Translate\-Z}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-soft\-Ik\-::output\-Translate\-Z\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__soft_ik_a81840d1c2a32bb9583990881fa327359}
+This is the Z component of the output translate array \hypertarget{class_m_g__soft_ik_aeb0fdd1e018c9a49d38f64856cf0ea6c}{\index{M\-G\-\_\-soft\-Ik@{M\-G\-\_\-soft\-Ik}!slide@{slide}}
+\index{slide@{slide}!MG_softIk@{M\-G\-\_\-soft\-Ik}}
+\subsubsection[{slide}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-soft\-Ik\-::slide\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__soft_ik_aeb0fdd1e018c9a49d38f64856cf0ea6c}
+This attribute let you slide the knee up and down \hypertarget{class_m_g__soft_ik_a4ab55903fd1f7ac8b66438ad9ea07640}{\index{M\-G\-\_\-soft\-Ik@{M\-G\-\_\-soft\-Ik}!soft\-Distance@{soft\-Distance}}
+\index{soft\-Distance@{soft\-Distance}!MG_softIk@{M\-G\-\_\-soft\-Ik}}
+\subsubsection[{soft\-Distance}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-soft\-Ik\-::soft\-Distance\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__soft_ik_a4ab55903fd1f7ac8b66438ad9ea07640}
+This attribute define at what distance from straight the ik will start softing \hypertarget{class_m_g__soft_ik_aee30f7b1a9cd369af0797452171a1656}{\index{M\-G\-\_\-soft\-Ik@{M\-G\-\_\-soft\-Ik}!start\-Matrix@{start\-Matrix}}
+\index{start\-Matrix@{start\-Matrix}!MG_softIk@{M\-G\-\_\-soft\-Ik}}
+\subsubsection[{start\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-soft\-Ik\-::start\-Matrix\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__soft_ik_aee30f7b1a9cd369af0797452171a1656}
+This attribute holds the world matrix of the start reference node of the ik (a transform matching the position of the ik root \hypertarget{class_m_g__soft_ik_a72bd64a9986cbb29cec8953ef4199289}{\index{M\-G\-\_\-soft\-Ik@{M\-G\-\_\-soft\-Ik}!stretch@{stretch}}
+\index{stretch@{stretch}!MG_softIk@{M\-G\-\_\-soft\-Ik}}
+\subsubsection[{stretch}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-soft\-Ik\-::stretch\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__soft_ik_a72bd64a9986cbb29cec8953ef4199289}
+This attribute lets you activate smoothly the stretch \hypertarget{class_m_g__soft_ik_aa83471e41222b306261d20f6851548b8}{\index{M\-G\-\_\-soft\-Ik@{M\-G\-\_\-soft\-Ik}!type\-Id@{type\-Id}}
+\index{type\-Id@{type\-Id}!MG_softIk@{M\-G\-\_\-soft\-Ik}}
+\subsubsection[{type\-Id}]{\setlength{\rightskip}{0pt plus 5cm}M\-Type\-Id M\-G\-\_\-soft\-Ik\-::type\-Id\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__soft_ik_aa83471e41222b306261d20f6851548b8}
+The node id \hypertarget{class_m_g__soft_ik_a77928e84cd0a9004779b0c180082efe9}{\index{M\-G\-\_\-soft\-Ik@{M\-G\-\_\-soft\-Ik}!up\-Init\-Length@{up\-Init\-Length}}
+\index{up\-Init\-Length@{up\-Init\-Length}!MG_softIk@{M\-G\-\_\-soft\-Ik}}
+\subsubsection[{up\-Init\-Length}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-soft\-Ik\-::up\-Init\-Length\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__soft_ik_a77928e84cd0a9004779b0c180082efe9}
+This attribute is the initial length of the second bone \hypertarget{class_m_g__soft_ik_a756bb616c77c3f8e43ede9b9e6cb5640}{\index{M\-G\-\_\-soft\-Ik@{M\-G\-\_\-soft\-Ik}!up\-Scale@{up\-Scale}}
+\index{up\-Scale@{up\-Scale}!MG_softIk@{M\-G\-\_\-soft\-Ik}}
+\subsubsection[{up\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}M\-Object M\-G\-\_\-soft\-Ik\-::up\-Scale\hspace{0.3cm}{\ttfamily [static]}}}\label{class_m_g__soft_ik_a756bb616c77c3f8e43ede9b9e6cb5640}
+This attribute is the output attribute for the first bone scale 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/giordi/\-Desktop/\-P\-R\-O\-G\-E\-T\-T\-I\-\_\-\-I\-N\-\_\-\-C\-O\-R\-S\-O/\-C/\-M\-G\-\_\-\-Tools/cpp/\-M\-G\-\_\-soft\-Ik/src/M\-G\-\_\-soft\-Ik.\-h\end{DoxyCompactItemize}
