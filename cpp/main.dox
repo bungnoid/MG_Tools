@@ -1,6 +1,10 @@
 /**
-\mainpage MARCO GIORDANO MG_tools 1.0
+\mainpage MARCO GIORDANO MG_tools 1.1
 
+Releses update :
+				-V1 : initial release 
+				-V1.1: - MG_softIk : new node
+					   - MG_twist : new fetures , implemented twistAxis attribute to chose on which axis to twist
 
 THIS PROJECTS NEEDS YOUR HELP!
 

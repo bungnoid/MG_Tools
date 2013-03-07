@@ -33,6 +33,7 @@ MObject MG_softIk::outputTranslateY;
 MObject MG_softIk::outputTranslateZ;
 MObject MG_softIk::outputTranslate;
 MObject MG_softIk::slide;
+MObject MG_softIk::globalScale;
 const double PI=3.14159265358979323846264338327950288419716939937510;
 
 
@@ -103,6 +104,12 @@ MStatus MG_softIk::initialize()
 	  numFn.setKeyable(true);
 	  addAttribute(downInitLength);
 	  
+
+	  globalScale = numFn.create("globalScale","gb",MFnNumericData::kDouble,0);
+	  numFn.setStorable(true);
+	  numFn.setKeyable(true);
+	  numFn.setMin(0.001);
+	  addAttribute(globalScale);
 
 	  softDistance = numFn.create("softDistance","sd",MFnNumericData::kDouble,0);
 	  numFn.setMin(0.001);
@@ -175,19 +182,21 @@ MStatus MG_softIk::initialize()
 	  attributeAffects( softDistance ,outputTranslate) ;
 	  attributeAffects( stretch ,outputTranslate) ;
 	  attributeAffects( slide ,outputTranslate) ;
-
+	  attributeAffects( globalScale ,outputTranslate) ;
 	  
 	  attributeAffects( startMatrix ,upScale) ;
 	  attributeAffects( endMatrix ,upScale) ;
 	  attributeAffects( stretch ,upScale) ;
 	  attributeAffects( softDistance ,upScale) ;
 	  attributeAffects( slide ,upScale) ;
+	  attributeAffects( globalScale ,upScale) ;
 
 	  attributeAffects( startMatrix ,downScale) ;
 	  attributeAffects( endMatrix ,downScale) ;
 	  attributeAffects( softDistance ,downScale) ;
 	  attributeAffects( stretch ,downScale) ;
 	  attributeAffects( slide ,downScale) ;
+	  attributeAffects( globalScale ,downScale) ;
 
  	  return MS::kSuccess;
 	}
@@ -205,9 +214,9 @@ MStatus MG_softIk::compute(const MPlug& plug,MDataBlock& dataBlock)
 		double softDistanceV = dataBlock.inputValue(softDistance).asDouble();
 		double stretchV= dataBlock.inputValue(stretch).asDouble();
 		double slideV = dataBlock.inputValue(slide).asDouble();
-		
-		upInitLengthV = upInitLengthV*(slideV*2) ;
-		downInitLengthV = downInitLengthV*((1 - slideV)*2);
+		double globalScaleV  = dataBlock.inputValue(globalScale).asDouble();
+		upInitLengthV = upInitLengthV*(slideV*2)*globalScaleV ;
+		downInitLengthV = downInitLengthV*((1 - slideV)*2)*globalScaleV;
  		double chainLength = upInitLengthV + downInitLengthV ;
 		
 		
@@ -225,7 +234,8 @@ MStatus MG_softIk::compute(const MPlug& plug,MDataBlock& dataBlock)
 		if (startSD <= currentLength)
 		{
 		
-
+		  if (softDistanceV != 0 )
+		  {
 		  double expParam =  ( currentLength - startSD) / softDistanceV;
 		  expParam*= -1 ;
 		  double softLength = ( (softDistanceV *(1 - exp ( expParam)) )+  startSD );
@@ -242,7 +252,7 @@ MStatus MG_softIk::compute(const MPlug& plug,MDataBlock& dataBlock)
 		     currentLengthVector  *=(1 + delta );
 		      
 		  }
-		  
+		  }
 		  
 		  
 		}

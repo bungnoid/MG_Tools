@@ -53,6 +53,8 @@ public:
 		static MStatus initialize();
 		virtual MStatus compute(const MPlug& plug,MDataBlock& dataBlock);
 
+private :
+	double smoothSthep (double a , double b , double t);
 
 
 public:
@@ -114,9 +116,12 @@ public:
 	* This is the output translate array
 	*/
 	static MObject outputTranslate;
+	/**
+	* This is input global scale
+	*/
+	static MObject globalScale;
 
-private :
-	double smoothSthep (double a , double b , double t);
+
 
 
 };
