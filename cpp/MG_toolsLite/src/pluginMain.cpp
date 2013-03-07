@@ -143,4 +143,4 @@ MStatus uninitializePlugin(MObject object)
 
 	return MS::kSuccess;
 
-} 
+}  
