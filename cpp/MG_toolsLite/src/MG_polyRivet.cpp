@@ -377,6 +377,7 @@ MStatus MG_polyRivet::compute(const MPlug& plug,MDataBlock& dataBlock)
 			meshFn.getPolygonNormal(faceIdV ,normal ,MSpace::kObject ) ;
 
 			normal.normalize();
+
 			normal = normal*meshParentMatrixV;
 
 			
@@ -452,6 +453,7 @@ MStatus MG_polyRivet::compute(const MPlug& plug,MDataBlock& dataBlock)
 			uVec = tantEnd - tantStart ;
 			uVec.normalize();
 		
+			std::cout<<"u vec :"<<uVec<<endl;
 			
 			
 			
@@ -459,7 +461,7 @@ MStatus MG_polyRivet::compute(const MPlug& plug,MDataBlock& dataBlock)
 			vVecCross =(uVec^normal);
 			vVecCross.normalize();
 			
-			
+			std::cout<<"v vec :"<<vVecCross<<endl;
 			
 
 
@@ -478,27 +480,10 @@ MStatus MG_polyRivet::compute(const MPlug& plug,MDataBlock& dataBlock)
 			MTransformationMatrix::RotationOrder rotOrder;
 			rotOrder =MTransformationMatrix::kXYZ;
 			matrixFn.getRotation(angles,rotOrder,MSpace::kObject );
-			//get back radians value
-			double radX,radY,radZ;
-
-			radX=angles[0]; 
-			radY=angles[1];
-			radZ=angles[2];
- 
-			
-
-			//convert to degree
-
-			double rotX,rotY,rotZ;
-
-			rotX = radX*toDeg;
-			rotY = radY*toDeg;
-			rotZ = radZ*toDeg; 
-			
 
 			MDataHandle outputRotateH = dataBlock.outputValue(outputRotate);
 			
-			outputRotateH.set3Double(rotX,rotY,rotZ);
+			outputRotateH.set3Double(angles[0],angles[1],angles[2]);
 			outputRotateH.setClean();
 
 			//let set the output matrix too
